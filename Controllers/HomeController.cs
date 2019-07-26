@@ -61,6 +61,7 @@ namespace InsuranceClientPortal.Controllers
                 customerEntity.Premium = customer.Premium;
                 customerEntity.AppDate = customer.AppDate;
                 customerEntity.EndDate = customer.PolicyEndDate;
+                customerEntity.Email = customer.Email;
                 customerEntity.ImageUrl = imageUri;
                 Customer newCustomer = await storageHelper.SaveInsuranceDetailsAsync(customerEntity, "Customers");
 
